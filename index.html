@@ -14,18 +14,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Hi!, Lets check how much you love each other.</h2>
-        <form>
-            <div>
-                <label for="yourname">YourName</label>
-                <input type="text" id="name1" required>
+        <div class="mnContainer">
+            <div class="txContainer">
+                <h1>LEt’s cOuNt yOuR LOvE.</h1>
+                <div>
+                    <img src="arrowDown.png" alt="click to go down">
+                </div>
             </div>
-            <div>
-                <label for="his/hername">His/Her Name</label>
-                <input type="text" id="name2" required>
-            </div>
-            <button type="submit" onclick="calc(event);">Check</button>
-        </form>
+            <form class="fmContainer">
+                <div class="finput1">
+                    <label for="yourname">yOuR NaME</label>
+                    <input type="text" id="name1" required>
+                </div>
+                <div class="finput2">
+                    <input type="text" id="name2" required>
+                    <label for="his/hername">hiS/hER NaME</label>
+                </div>
+                <button type="submit" onclick="calc(event);">Check</button>
+            </form>
+        </div>
     </body>
     <script src="main.js"></script>
 </html>
