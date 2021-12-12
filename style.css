@@ -96,3 +96,56 @@ button {
 button:hover {
     transform: rotate(3deg);
 }
+@media only screen and (min-width: 720px) {
+    .mnContainer {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .txContainer{
+        width: 30%;
+    }
+    .txContainer h1 {
+        position: relative;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+    .txContainer div {
+        display: none;
+    }
+    .fmContainer{
+        width: 70%;
+    }
+    .finput1,
+    .finput2 {
+        position: relative;
+        top: 15%;
+        right: 0;
+        left: 11%;
+        transform: rotate(-16.8deg);
+        width: 55%;
+    }
+    .finput1 input,
+    .finput2 input {
+        background-color: #fcdada;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin-top: 7px;
+        padding: 25px 10px;
+        color: #f21c7fe0;
+        text-transform: capitalize;
+    }
+    .finput2 {
+        top: 35%;
+        left: 27%;
+        transform: rotate(19.2deg);
+    }
+    .finput2 input {
+        margin-bottom: 8px;
+    }
+}
