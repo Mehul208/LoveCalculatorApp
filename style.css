@@ -29,6 +29,7 @@ body {
     max-width: 40px;
     display: block;
     margin: 0 auto;
+    opacity: 0.85;
 }
 .fmContainer {
     height: 100vh;
