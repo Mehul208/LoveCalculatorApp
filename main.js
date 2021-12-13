@@ -1,3 +1,15 @@
+let btnValue2 = false;
+
+const inps = document.querySelectorAll("input");
+inps.forEach((inp) => {
+    inp.addEventListener("focus", () => {
+        if (btnValue2) {
+            document.querySelector("#btn1").innerHTML = "Check";
+            btnValue2 = false;
+        }
+    });
+});
+
 const calc = (event) => {
     event.preventDefault();
     const str1 = document.querySelector("#name1").value.toLowerCase();
@@ -56,5 +68,7 @@ const calc = (event) => {
         lovePercent = calcArray[0].toString() + lDigit.toString();
     }
 
-    console.log(`Here is your love hard ${lovePercent}%`);
+    document.querySelector("#btn1").innerHTML = `${lovePercent}%`;
+    btnValue2 = true;
+    // console.log(`Here is your love hard ${lovePercent}%`);
 };
