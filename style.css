@@ -21,9 +21,10 @@ body {
 }
 .txContainer div {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
     padding: 10px 0;
+    animation: bouncy 0.3s linear infinite alternate;
 }
 .txContainer div img {
     max-width: 40px;
@@ -96,14 +97,23 @@ button {
 button:hover {
     transform: rotate(3deg);
 }
+@keyframes bouncy {
+    from {
+        bottom: 20px;
+    }
+    to {
+        bottom: 30px;
+    }
+}
 @media only screen and (min-width: 720px) {
     .mnContainer {
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;
     }
-    .txContainer{
-        width: 30%;
+    .txContainer {
+        display: block;
+        width: 45%;
     }
     .txContainer h1 {
         position: relative;
@@ -113,8 +123,8 @@ button:hover {
     .txContainer div {
         display: none;
     }
-    .fmContainer{
-        width: 70%;
+    .fmContainer {
+        width: 55%;
     }
     .finput1,
     .finput2 {
@@ -122,30 +132,21 @@ button:hover {
         top: 15%;
         right: 0;
         left: 11%;
-        transform: rotate(-16.8deg);
         width: 55%;
-    }
-    .finput1 input,
-    .finput2 input {
-        background-color: #fcdada;
-        outline: none;
-        border: none;
-        border-radius: 15px;
-        font-size: 1.5rem;
-        font-weight: 600;
-        width: 100%;
-        text-align: center;
-        margin-top: 7px;
-        padding: 25px 10px;
-        color: #f21c7fe0;
-        text-transform: capitalize;
     }
     .finput2 {
         top: 35%;
         left: 27%;
-        transform: rotate(19.2deg);
+        transform: rotate(17.2deg);
     }
-    .finput2 input {
-        margin-bottom: 8px;
+}
+@media only screen and (min-width: 1280px) {
+    .txContainer h1 {
+        width: 55%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .fmContainer {
+        width: 45%;
     }
 }
